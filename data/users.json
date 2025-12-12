@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1765514386066",
+    "name": "Devanshhh",
+    "email": "dev@gmail.com",
+    "password": "$2a$10$auA95iGjxxdB2l4Qmzt.gOSlvLxGZ.YLcqRZLL43wMFsY1Ck5PNYO",
+    "points": 95,
+    "wishlist": [
+      2,
+      3
+    ],
+    "visited": [
+      {
+        "museumId": 3,
+        "date": "2025-12-12T05:18:03.183Z"
+      }
+    ],
+    "reviews": [
+      {
+        "museumId": 3,
+        "date": "2025-12-12T05:18:30.865Z",
+        "rating": 4,
+        "notes": "good one"
+      }
+    ]
+  },
+  {
+    "id": "1765517326889",
+    "name": "Ansh",
+    "email": "ansh@gmail.com",
+    "password": "$2a$10$Ml8DUbSH8UAQ93UwKRQaHef4Cd9GS0D9XZaCL3gYpghVf6zyYtkYi",
+    "points": 60,
+    "wishlist": [
+      3
+    ],
+    "visited": [
+      {
+        "museumId": 3,
+        "date": "2025-12-12T05:35:01.020Z"
+      }
+    ],
+    "reviews": []
+  }
+]

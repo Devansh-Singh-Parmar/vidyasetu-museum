@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "name": "National Museum, New Delhi",
+    "location": "New Delhi",
+    "state": "Delhi",
+    "description": "India's largest museum showcasing over 200,000 works of art covering more than 5,000 years of Indian cultural heritage.",
+    "openingHours": "10:00 AM - 6:00 PM",
+    "ticketPrice": "₹20 (Indians), ₹650 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Dancing Girl of Mohenjo-daro",
+        "description": "A 4,500-year-old bronze statuette from the Indus Valley Civilization, one of the most iconic artifacts of ancient India.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "2500 BCE",
+        "significance": "Represents the artistic sophistication of the Harappan civilization"
+      },
+      {
+        "name": "Buddha's Relics",
+        "description": "Sacred relics of Lord Buddha, including bone fragments and ashes, housed in a golden casket.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "5th Century BCE",
+        "significance": "One of the most important Buddhist relics in the world"
+      },
+      {
+        "name": "Chola Bronze Nataraja",
+        "description": "A magnificent bronze sculpture of Lord Shiva in his cosmic dance form, created during the Chola dynasty.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "11th Century CE",
+        "significance": "Exemplifies the pinnacle of Chola bronze artistry"
+      },
+      {
+        "name": "Mughal Miniature Paintings",
+        "description": "Exquisite collection of Mughal miniature paintings depicting court life, battles, and nature scenes.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-18th Century CE",
+        "significance": "Showcases the fusion of Persian and Indian artistic traditions"
+      },
+      {
+        "name": "Gandhi Memorabilia",
+        "description": "Personal belongings of Mahatma Gandhi including his spectacles, spinning wheel, and letters.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "20th Century CE",
+        "significance": "Symbols of India's freedom struggle and non-violence movement"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Indian Museum, Kolkata",
+    "location": "Kolkata",
+    "state": "West Bengal",
+    "description": "The oldest and largest multipurpose museum in India, established in 1814, housing rare collections of antiques, armor, and ornaments.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Mondays)",
+    "ticketPrice": "₹20 (Indians), ₹500 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Asiatic Lion Skeleton",
+        "description": "Complete skeleton of an Asiatic lion, showcasing the natural history collection.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "19th Century",
+        "significance": "Important specimen for zoological studies"
+      },
+      {
+        "name": "Buddhist Relics from Piprahwa",
+        "description": "Ancient Buddhist relics discovered in Piprahwa, believed to contain remains of Buddha's disciples.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE",
+        "significance": "Rare archaeological find from the Mauryan period"
+      },
+      {
+        "name": "Egyptian Mummy",
+        "description": "A well-preserved Egyptian mummy, one of the few in India, showcasing ancient Egyptian burial practices.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "2000 BCE",
+        "significance": "Rare example of Egyptian mummification outside Egypt"
+      },
+      {
+        "name": "Gandhara Art Collection",
+        "description": "Extensive collection of Gandhara sculptures showing Greco-Buddhist art style.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "1st-5th Century CE",
+        "significance": "Demonstrates the fusion of Greek and Indian artistic traditions"
+      },
+      {
+        "name": "Rare Coins Collection",
+        "description": "One of the largest numismatic collections in India, featuring coins from various dynasties.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "6th Century BCE - Present",
+        "significance": "Chronicles India's economic history through currency"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Salar Jung Museum, Hyderabad",
+    "location": "Hyderabad",
+    "state": "Telangana",
+    "description": "One of the three National Museums of India, housing the art collection of the Salar Jung family.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Fridays)",
+    "ticketPrice": "₹20 (Indians), ₹500 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Veiled Rebecca",
+        "description": "A stunning marble sculpture by Italian artist Giovanni Maria Benzoni, famous for its translucent veil effect.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "1876 CE",
+        "significance": "Masterpiece of Italian neoclassical sculpture"
+      },
+      {
+        "name": "Double Statue of Mephistopheles and Margaretta",
+        "description": "A unique wooden statue that shows two different characters when viewed from opposite sides.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "19th Century CE",
+        "significance": "Rare example of dual-perspective sculpture"
+      },
+      {
+        "name": "Jade Dagger of Emperor Jahangir",
+        "description": "Exquisitely crafted jade dagger belonging to Mughal Emperor Jahangir, inlaid with precious stones.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "17th Century CE",
+        "significance": "Represents Mughal craftsmanship and luxury"
+      },
+      {
+        "name": "Quran Collection",
+        "description": "Rare collection of handwritten Qurans from different periods, including one written in gold.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "Showcases Islamic calligraphy and manuscript art"
+      },
+      {
+        "name": "European Paintings",
+        "description": "Collection of European paintings including works by renowned artists like Raphael and Rembrandt.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "15th-19th Century CE",
+        "significance": "Rare European art collection in India"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya, Mumbai",
+    "location": "Mumbai",
+    "state": "Maharashtra",
+    "description": "Formerly known as the Prince of Wales Museum, this Indo-Saracenic architecture building houses art, archaeology, and natural history collections.",
+    "openingHours": "10:15 AM - 6:00 PM (Closed on Public Holidays)",
+    "ticketPrice": "₹85 (Indians), ₹500 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Nataraja Bronze",
+        "description": "A magnificent Chola bronze sculpture of Lord Shiva in his cosmic dance pose.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "12th Century CE",
+        "significance": "Masterpiece of Chola bronze casting"
+      },
+      {
+        "name": "Gandhara Buddha Head",
+        "description": "A beautifully carved Buddha head from the Gandhara region, showing Greco-Buddhist influence.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "2nd-3rd Century CE",
+        "significance": "Exemplifies the fusion of Greek and Buddhist art"
+      },
+      {
+        "name": "Mughal Miniature Paintings",
+        "description": "Collection of exquisite Mughal miniature paintings from the royal courts.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-18th Century CE",
+        "significance": "Represents the golden age of Mughal painting"
+      },
+      {
+        "name": "Nepalese Wood Carvings",
+        "description": "Intricate wood carvings from Nepal showcasing Hindu and Buddhist iconography.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "17th-18th Century CE",
+        "significance": "Demonstrates Nepalese craftsmanship"
+      },
+      {
+        "name": "European Paintings",
+        "description": "Collection of European oil paintings including landscapes and portraits.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "18th-19th Century CE",
+        "significance": "Shows European artistic influence in colonial India"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Government Museum, Chennai",
+    "location": "Chennai",
+    "state": "Tamil Nadu",
+    "description": "One of the oldest museums in India, established in 1851, known for its archaeological and numismatic collections.",
+    "openingHours": "9:30 AM - 5:00 PM (Closed on Fridays)",
+    "ticketPrice": "₹15 (Indians), ₹250 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Chola Bronze Collection",
+        "description": "World's largest collection of Chola bronze sculptures, including various forms of Shiva and Vishnu.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "9th-13th Century CE",
+        "significance": "Pinnacle of South Indian bronze artistry"
+      },
+      {
+        "name": "Amaravati Marbles",
+        "description": "Buddhist sculptures and reliefs from the ancient Amaravati stupa, showcasing early Buddhist art.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "2nd Century BCE - 3rd Century CE",
+        "significance": "Important examples of early Buddhist art in South India"
+      },
+      {
+        "name": "Pallava Stone Sculptures",
+        "description": "Exquisite stone sculptures from the Pallava dynasty, known for their intricate carvings.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "6th-9th Century CE",
+        "significance": "Represents Pallava architectural and sculptural excellence"
+      },
+      {
+        "name": "Rare Coins",
+        "description": "Extensive collection of coins from various South Indian dynasties including Cholas, Pandyas, and Cheras.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE - 18th Century CE",
+        "significance": "Chronicles South Indian economic history"
+      },
+      {
+        "name": "Prehistoric Artifacts",
+        "description": "Collection of stone tools and artifacts from prehistoric times found in Tamil Nadu.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Paleolithic - Neolithic",
+        "significance": "Evidence of early human habitation in South India"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Calico Museum of Textiles, Ahmedabad",
+    "location": "Ahmedabad",
+    "state": "Gujarat",
+    "description": "One of the finest textile museums in the world, showcasing India's rich textile heritage from the 15th century onwards.",
+    "openingHours": "10:30 AM - 12:30 PM, 2:30 PM - 4:30 PM (By appointment only)",
+    "ticketPrice": "Free (Prior booking required)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Mughal Court Carpets",
+        "description": "Exquisite handwoven carpets from the Mughal era, featuring intricate Persian designs.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-18th Century CE",
+        "significance": "Represents the height of Mughal textile art"
+      },
+      {
+        "name": "Patola Sarees",
+        "description": "Rare double-ikat Patola sarees from Patan, known for their complex geometric patterns.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "17th-19th Century CE",
+        "significance": "Masterpieces of Gujarati textile tradition"
+      },
+      {
+        "name": "Pichhwai Paintings on Cloth",
+        "description": "Devotional paintings on cloth depicting Lord Krishna, used as temple hangings.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "18th-19th Century CE",
+        "significance": "Unique form of textile art from Rajasthan"
+      },
+      {
+        "name": "Kashmiri Shawls",
+        "description": "Exquisite handwoven Pashmina and Kani shawls from Kashmir with intricate embroidery.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "18th-19th Century CE",
+        "significance": "Luxury textiles representing Kashmiri craftsmanship"
+      },
+      {
+        "name": "South Indian Temple Hangings",
+        "description": "Colorful temple hangings and canopies from South Indian temples, showcasing regional textile traditions.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "17th-19th Century CE",
+        "significance": "Religious textiles from South Indian temple traditions"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Victoria Memorial Hall, Kolkata",
+    "location": "Kolkata",
+    "state": "West Bengal",
+    "description": "A magnificent marble building dedicated to Queen Victoria, housing a museum with British colonial artifacts and Indian art.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Mondays)",
+    "ticketPrice": "₹30 (Indians), ₹500 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Queen Victoria's Statue",
+        "description": "A grand marble statue of Queen Victoria, the centerpiece of the memorial.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "1901 CE",
+        "significance": "Symbol of British colonial rule in India"
+      },
+      {
+        "name": "Paintings by European Artists",
+        "description": "Collection of oil paintings depicting colonial India by British and European artists.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "18th-19th Century CE",
+        "significance": "Visual documentation of colonial India"
+      },
+      {
+        "name": "Bengal School Paintings",
+        "description": "Paintings by artists of the Bengal School including Abanindranath Tagore and Nandalal Bose.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Early 20th Century CE",
+        "significance": "Revival of Indian artistic traditions"
+      },
+      {
+        "name": "Royal Gallery",
+        "description": "Portraits and memorabilia of British royalty and Indian princes from the colonial era.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "19th-20th Century CE",
+        "significance": "Historical documentation of the colonial period"
+      },
+      {
+        "name": "Calcutta Gallery",
+        "description": "Exhibition showcasing the history and development of Kolkata from a small village to a major city.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "17th-20th Century CE",
+        "significance": "Chronicles the urban history of Kolkata"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Rajasthan State Museum, Jaipur",
+    "location": "Jaipur",
+    "state": "Rajasthan",
+    "description": "Houses a rich collection of artifacts, paintings, and sculptures representing Rajasthan's cultural heritage.",
+    "openingHours": "10:00 AM - 4:30 PM (Closed on Mondays)",
+    "ticketPrice": "₹20 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Rajasthani Miniature Paintings",
+        "description": "Exquisite collection of Rajasthani miniature paintings from various schools including Mewar, Marwar, and Bundi.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-19th Century CE",
+        "significance": "Represents the distinct style of Rajasthani painting"
+      },
+      {
+        "name": "Arms and Armor",
+        "description": "Collection of royal weapons, armor, and shields from Rajput kingdoms.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-19th Century CE",
+        "significance": "Showcases Rajput martial traditions"
+      },
+      {
+        "name": "Stone Sculptures",
+        "description": "Hindu and Jain stone sculptures from various periods of Rajasthan's history.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "6th-18th Century CE",
+        "significance": "Religious art from Rajasthan"
+      },
+      {
+        "name": "Coins and Medals",
+        "description": "Numismatic collection featuring coins from various Rajput kingdoms and princely states.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "8th-20th Century CE",
+        "significance": "Economic history of Rajasthan"
+      },
+      {
+        "name": "Textiles and Costumes",
+        "description": "Traditional Rajasthani textiles, costumes, and jewelry showcasing regional craftsmanship.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "18th-20th Century CE",
+        "significance": "Rajasthani textile and fashion heritage"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kerala Museum, Kochi",
+    "location": "Kochi",
+    "state": "Kerala",
+    "description": "Showcases Kerala's rich cultural heritage including traditional art, artifacts, and historical documents.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Mondays)",
+    "ticketPrice": "₹20 (Indians), ₹200 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Kerala Mural Paintings",
+        "description": "Traditional mural paintings from Kerala temples, depicting Hindu mythology and legends.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "15th-18th Century CE",
+        "significance": "Unique style of South Indian temple art"
+      },
+      {
+        "name": "Cochin Port History",
+        "description": "Exhibition documenting the history of Kochi as a major trading port and its interactions with various cultures.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-20th Century CE",
+        "significance": "Maritime history of Kerala"
+      },
+      {
+        "name": "Traditional Kerala Architecture Models",
+        "description": "Scale models of traditional Kerala architecture including Nalukettu houses and temple structures.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "Architectural heritage of Kerala"
+      },
+      {
+        "name": "Theyyam Masks and Costumes",
+        "description": "Traditional Theyyam ritual masks, costumes, and accessories from North Kerala.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Cultural and religious traditions of Kerala"
+      },
+      {
+        "name": "Spice Trade Artifacts",
+        "description": "Historical artifacts related to Kerala's spice trade including ancient maps, trade documents, and spice samples.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "15th-19th Century CE",
+        "significance": "Kerala's role in global spice trade"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Birla Industrial & Technological Museum, Kolkata",
+    "location": "Kolkata",
+    "state": "West Bengal",
+    "description": "India's first science museum, established in 1959, featuring interactive exhibits on science and technology.",
+    "openingHours": "10:00 AM - 5:30 PM (Closed on Mondays)",
+    "ticketPrice": "₹30 (Adults), ₹20 (Children)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Steam Engine Model",
+        "description": "Working model of a steam engine demonstrating the Industrial Revolution technology.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "19th Century",
+        "significance": "Historical technology demonstration"
+      },
+      {
+        "name": "Electricity Gallery",
+        "description": "Interactive exhibits explaining electricity, magnetism, and electrical engineering principles.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Educational science exhibits"
+      },
+      {
+        "name": "Mining Gallery",
+        "description": "Exhibition on mining technology and processes, including models of mining equipment.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Industrial technology education"
+      },
+      {
+        "name": "Transport Gallery",
+        "description": "Models and exhibits showcasing the evolution of transportation from bullock carts to modern vehicles.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "History of transportation"
+      },
+      {
+        "name": "Mathematics Gallery",
+        "description": "Interactive mathematical models and puzzles demonstrating mathematical principles.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Mathematical education through exhibits"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Archaeological Museum, Hampi",
+    "location": "Hampi",
+    "state": "Karnataka",
+    "description": "Houses artifacts and sculptures from the Vijayanagara Empire, one of the greatest empires in Indian history.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Fridays)",
+    "ticketPrice": "₹5 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Vijayanagara Sculptures",
+        "description": "Stone sculptures from the Vijayanagara period depicting Hindu deities and mythological scenes.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-16th Century CE",
+        "significance": "Art from the golden age of Vijayanagara"
+      },
+      {
+        "name": "Temple Architecture Models",
+        "description": "Scale models of Vijayanagara temples showcasing the architectural grandeur of the empire.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-16th Century CE",
+        "significance": "Vijayanagara architectural heritage"
+      },
+      {
+        "name": "Coins of Vijayanagara",
+        "description": "Gold and copper coins minted during the Vijayanagara Empire, featuring various rulers.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-16th Century CE",
+        "significance": "Economic history of Vijayanagara"
+      },
+      {
+        "name": "Inscriptions",
+        "description": "Stone inscriptions in various languages documenting the history and administration of Vijayanagara.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-16th Century CE",
+        "significance": "Historical records of the empire"
+      },
+      {
+        "name": "Weapons and Armor",
+        "description": "Collection of weapons, armor, and military equipment from the Vijayanagara period.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "14th-16th Century CE",
+        "significance": "Military history of Vijayanagara"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Punjab State Museum, Chandigarh",
+    "location": "Chandigarh",
+    "state": "Punjab",
+    "description": "Showcases the rich cultural heritage of Punjab including art, archaeology, and historical artifacts.",
+    "openingHours": "10:00 AM - 4:30 PM (Closed on Mondays)",
+    "ticketPrice": "₹10 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Harappan Artifacts",
+        "description": "Artifacts from the Indus Valley Civilization sites in Punjab, including pottery and seals.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "2500-1900 BCE",
+        "significance": "Evidence of ancient civilization in Punjab"
+      },
+      {
+        "name": "Sikh Art and Artifacts",
+        "description": "Collection of Sikh religious art, manuscripts, and artifacts from the Sikh period.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-19th Century CE",
+        "significance": "Sikh cultural and religious heritage"
+      },
+      {
+        "name": "Gandharan Sculptures",
+        "description": "Buddhist sculptures from the Gandhara region, showing Greco-Buddhist artistic style.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "1st-5th Century CE",
+        "significance": "Buddhist art from ancient Punjab"
+      },
+      {
+        "name": "Punjabi Folk Art",
+        "description": "Traditional Punjabi folk art including Phulkari embroidery, paintings, and handicrafts.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Punjabi cultural traditions"
+      },
+      {
+        "name": "Coins Collection",
+        "description": "Numismatic collection featuring coins from various periods of Punjab's history.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "Economic history of Punjab"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Assam State Museum, Guwahati",
+    "location": "Guwahati",
+    "state": "Assam",
+    "description": "Houses collections related to Assam's history, culture, and archaeology including Ahom period artifacts.",
+    "openingHours": "10:00 AM - 5:00 PM (Closed on Mondays)",
+    "ticketPrice": "₹5 (Indians), ₹50 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Ahom Royal Artifacts",
+        "description": "Artifacts from the Ahom kingdom including royal regalia, weapons, and ceremonial objects.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "13th-19th Century CE",
+        "significance": "Ahom dynasty heritage"
+      },
+      {
+        "name": "Assamese Textiles",
+        "description": "Traditional Assamese textiles including Muga silk, Eri silk, and traditional costumes.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Assamese textile traditions"
+      },
+      {
+        "name": "Stone Sculptures",
+        "description": "Hindu and Buddhist stone sculptures from various periods of Assam's history.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "8th-18th Century CE",
+        "significance": "Religious art from Assam"
+      },
+      {
+        "name": "Manuscripts",
+        "description": "Ancient manuscripts in Assamese, Sanskrit, and other languages on various subjects.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "Literary heritage of Assam"
+      },
+      {
+        "name": "Tribal Artifacts",
+        "description": "Artifacts and handicrafts from various tribal communities of Assam.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Tribal cultural heritage"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Goa State Museum, Panaji",
+    "location": "Panaji",
+    "state": "Goa",
+    "description": "Showcases Goa's rich history including Portuguese colonial artifacts, Hindu sculptures, and Christian art.",
+    "openingHours": "9:30 AM - 5:30 PM (Closed on Sundays)",
+    "ticketPrice": "₹10 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Portuguese Colonial Artifacts",
+        "description": "Artifacts from the Portuguese colonial period including furniture, ceramics, and documents.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-20th Century CE",
+        "significance": "Portuguese colonial heritage"
+      },
+      {
+        "name": "Hindu Sculptures",
+        "description": "Stone sculptures of Hindu deities from pre-Portuguese Goa, showcasing ancient Goan art.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "6th-16th Century CE",
+        "significance": "Pre-colonial Goan art"
+      },
+      {
+        "name": "Christian Art",
+        "description": "Christian religious art including paintings, sculptures, and artifacts from Goan churches.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-19th Century CE",
+        "significance": "Indo-Portuguese Christian art"
+      },
+      {
+        "name": "Numismatic Collection",
+        "description": "Coins from various periods including Portuguese, Maratha, and British colonial coins.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Various periods",
+        "significance": "Economic history of Goa"
+      },
+      {
+        "name": "Printing Press History",
+        "description": "Exhibition on the history of printing in Goa, including early printed books and printing equipment.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "16th-19th Century CE",
+        "significance": "Goa's role in the history of printing in India"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bharat Bhavan, Bhopal",
+    "location": "Bhopal",
+    "state": "Madhya Pradesh",
+    "description": "A multi-arts complex and museum showcasing contemporary Indian art, tribal art, and performing arts.",
+    "openingHours": "2:00 PM - 8:00 PM (Closed on Mondays)",
+    "ticketPrice": "₹10 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Contemporary Indian Art",
+        "description": "Collection of contemporary paintings, sculptures, and installations by modern Indian artists.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "20th-21st Century CE",
+        "significance": "Modern Indian artistic expression"
+      },
+      {
+        "name": "Tribal Art Collection",
+        "description": "Extensive collection of tribal art from Madhya Pradesh including paintings, sculptures, and artifacts.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Tribal cultural heritage of Central India"
+      },
+      {
+        "name": "Gond Paintings",
+        "description": "Traditional Gond tribal paintings known for their intricate patterns and vibrant colors.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Indigenous art form from Central India"
+      },
+      {
+        "name": "Sculpture Garden",
+        "description": "Outdoor exhibition of contemporary sculptures by renowned Indian artists.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Contemporary sculpture art"
+      },
+      {
+        "name": "Photography Collection",
+        "description": "Collection of photographs documenting Indian culture, society, and contemporary life.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "20th-21st Century CE",
+        "significance": "Visual documentation of modern India"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Jawahar Kala Kendra, Jaipur",
+    "location": "Jaipur",
+    "state": "Rajasthan",
+    "description": "A multi-arts center designed by Charles Correa, showcasing Rajasthani culture, art, and performing arts.",
+    "openingHours": "9:00 AM - 6:00 PM",
+    "ticketPrice": "₹20 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Rajasthani Folk Art",
+        "description": "Collection of Rajasthani folk paintings, including Phad, Pichwai, and miniature paintings.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Rajasthani artistic traditions"
+      },
+      {
+        "name": "Traditional Rajasthani Costumes",
+        "description": "Exhibition of traditional Rajasthani costumes, jewelry, and textiles from different regions.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Rajasthani fashion and textile heritage"
+      },
+      {
+        "name": "Musical Instruments",
+        "description": "Collection of traditional Rajasthani musical instruments including string, wind, and percussion instruments.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Traditional",
+        "significance": "Rajasthani musical heritage"
+      },
+      {
+        "name": "Contemporary Art Gallery",
+        "description": "Rotating exhibitions of contemporary art by Rajasthani and Indian artists.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Contemporary artistic expression"
+      },
+      {
+        "name": "Architecture Exhibition",
+        "description": "Exhibition on the architecture of Jawahar Kala Kendra and Charles Correa's design philosophy.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "Modern",
+        "significance": "Modern Indian architecture"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Sarnath Museum, Varanasi",
+    "location": "Varanasi",
+    "state": "Uttar Pradesh",
+    "description": "Houses artifacts from the ancient Buddhist site of Sarnath, where Buddha gave his first sermon.",
+    "openingHours": "9:00 AM - 5:00 PM (Closed on Fridays)",
+    "ticketPrice": "₹5 (Indians), ₹100 (Foreigners)",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+    "topExhibits": [
+      {
+        "name": "Lion Capital of Ashoka",
+        "description": "The original Lion Capital from the Ashoka Pillar at Sarnath, now the national emblem of India.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE",
+        "significance": "National symbol and masterpiece of Mauryan art"
+      },
+      {
+        "name": "Buddha Statues",
+        "description": "Collection of Buddha statues from various periods, including the famous standing Buddha from Sarnath.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "5th-12th Century CE",
+        "significance": "Evolution of Buddha iconography"
+      },
+      {
+        "name": "Buddhist Relics",
+        "description": "Sacred relics and fragments from the ancient Sarnath stupa and monasteries.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE - 12th Century CE",
+        "significance": "Buddhist archaeological finds"
+      },
+      {
+        "name": "Stupa Fragments",
+        "description": "Carved stone fragments and panels from the ancient Sarnath stupa, depicting Buddhist scenes.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE - 12th Century CE",
+        "significance": "Buddhist architectural art"
+      },
+      {
+        "name": "Inscriptions",
+        "description": "Stone inscriptions in various scripts documenting the history of Sarnath and Buddhism.",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        "period": "3rd Century BCE - 12th Century CE",
+        "significance": "Historical records of Buddhist site"
+      }
+    ]
+  }
+]
+
