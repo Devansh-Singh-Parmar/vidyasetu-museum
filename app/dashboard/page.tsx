@@ -23,7 +23,7 @@ interface VisitedMuseum extends Museum {
 }
 
 export default function DashboardPage() {
-  const { user, loading } = useAuth()
+  const { user, loading, refreshUser } = useAuth()
   const router = useRouter()
   const [activeTab, setActiveTab] = useState<'wishlist' | 'visited' | 'reviews'>('wishlist')
   const [wishlist, setWishlist] = useState<Museum[]>([])
@@ -80,6 +80,9 @@ export default function DashboardPage() {
         }) as VisitedMuseum[]
         setReviews(reviewMuseums)
       }
+
+      // Pull fresh points/metadata after mutations.
+      await refreshUser()
     } catch (error) {
       console.error('Error loading user data:', error)
     }
@@ -99,10 +102,10 @@ export default function DashboardPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-2 text-gray-900">My Dashboard</h1>
-      <p className="text-gray-700 mb-8">
-        Welcome, {user.name}! You have {user.points} points.
-      </p>
+      <div className="flex flex-col gap-1 mb-6">
+        <h1 className="text-3xl font-bold text-gray-900">Hi {user.name},</h1>
+        <p className="text-gray-700">You’ve got {user.points} points and plenty to explore.</p>
+      </div>
 
       <div className="flex gap-4 mb-8 border-b-2 border-gray-300">
         <button
@@ -139,9 +142,9 @@ export default function DashboardPage() {
 
       {activeTab === 'wishlist' && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">My Wishlist</h2>
+          <h2 className="text-xl font-semibold mb-3">Wishlist</h2>
           {wishlist.length === 0 ? (
-            <p className="text-gray-700">Your wishlist is empty. Start exploring museums!</p>
+            <p className="text-gray-700">Nothing saved yet. Add a few spots to plan your next day out.</p>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {wishlist.map((museum) => (
@@ -150,14 +153,19 @@ export default function DashboardPage() {
                   href={`/museums/${museum.id}`}
                   className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
                 >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={museum.image}
-                      alt={museum.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                  {(() => {
+                    const imageUrl = museum.image || `https://source.unsplash.com/featured/?${encodeURIComponent(museum.name)}`
+                    return (
+                      <div className="relative h-48 w-full">
+                        <Image
+                          src={imageUrl}
+                          alt={museum.name}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    )
+                  })()}
                   <div className="p-4">
                     <h3 className="text-xl font-semibold mb-2 text-gray-900">{museum.name}</h3>
                     <p className="text-gray-700 text-sm">
@@ -173,9 +181,9 @@ export default function DashboardPage() {
 
       {activeTab === 'visited' && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">Visited Log</h2>
+          <h2 className="text-xl font-semibold mb-3">Visited</h2>
           {visited.length === 0 ? (
-            <p className="text-gray-700">You haven't visited any museums yet.</p>
+            <p className="text-gray-700">Mark a visit to start your trail.</p>
           ) : (
             <div className="space-y-4">
               {visited.map((museum) => {
@@ -185,14 +193,19 @@ export default function DashboardPage() {
                     key={museum.id}
                     className="bg-white rounded-lg shadow-md p-6 flex gap-6"
                   >
-                    <div className="relative h-32 w-32 flex-shrink-0">
-                      <Image
-                        src={museum.image}
-                        alt={museum.name}
-                        fill
-                        className="object-cover rounded"
-                      />
-                    </div>
+                    {(() => {
+                      const imageUrl = museum.image || `https://source.unsplash.com/featured/?${encodeURIComponent(museum.name)}`
+                      return (
+                        <div className="relative h-32 w-32 flex-shrink-0">
+                          <Image
+                            src={imageUrl}
+                            alt={museum.name}
+                            fill
+                            className="object-cover rounded"
+                          />
+                        </div>
+                      )
+                    })()}
                     <div className="flex-1">
                       <Link
                         href={`/museums/${museum.id}`}
@@ -228,9 +241,9 @@ export default function DashboardPage() {
 
       {activeTab === 'reviews' && (
         <div>
-          <h2 className="text-2xl font-bold mb-4">Review Diary</h2>
+          <h2 className="text-xl font-semibold mb-3">Reviews</h2>
           {reviews.length === 0 ? (
-            <p className="text-gray-700">You haven't written any reviews yet.</p>
+            <p className="text-gray-700">No notes yet. Share a quick thought after your next visit.</p>
           ) : (
             <div className="space-y-4">
               {reviews.map((museum) => (
@@ -239,14 +252,19 @@ export default function DashboardPage() {
                   className="bg-white rounded-lg shadow-md p-6"
                 >
                   <div className="flex gap-6 mb-4">
-                    <div className="relative h-32 w-32 flex-shrink-0">
-                      <Image
-                        src={museum.image}
-                        alt={museum.name}
-                        fill
-                        className="object-cover rounded"
-                      />
-                    </div>
+                    {(() => {
+                      const imageUrl = museum.image || `https://source.unsplash.com/featured/?${encodeURIComponent(museum.name)}`
+                      return (
+                        <div className="relative h-32 w-32 flex-shrink-0">
+                          <Image
+                            src={imageUrl}
+                            alt={museum.name}
+                            fill
+                            className="object-cover rounded"
+                          />
+                        </div>
+                      )
+                    })()}
                     <div className="flex-1">
                       <Link
                         href={`/museums/${museum.id}`}

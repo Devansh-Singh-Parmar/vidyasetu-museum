@@ -4,15 +4,23 @@
     "name": "Devanshhh",
     "email": "dev@gmail.com",
     "password": "$2a$10$auA95iGjxxdB2l4Qmzt.gOSlvLxGZ.YLcqRZLL43wMFsY1Ck5PNYO",
-    "points": 95,
+    "points": 205,
     "wishlist": [
-      2,
-      3
+      3,
+      6
     ],
     "visited": [
       {
         "museumId": 3,
         "date": "2025-12-12T05:18:03.183Z"
+      },
+      {
+        "museumId": 2,
+        "date": "2025-12-12T07:45:05.781Z"
+      },
+      {
+        "museumId": 9,
+        "date": "2025-12-12T08:18:02.674Z"
       }
     ],
     "reviews": [
@@ -37,6 +45,28 @@
       {
         "museumId": 3,
         "date": "2025-12-12T05:35:01.020Z"
+      }
+    ],
+    "reviews": []
+  },
+  {
+    "id": "1765527782929",
+    "name": "ayaan",
+    "email": "ay@gmail.com",
+    "password": "$2a$10$UaewdyiOPwgIUl5xIGhMXuPs5gE5FVkelN4AJDTlt4NRsesXJBciW",
+    "points": 120,
+    "wishlist": [
+      1,
+      2
+    ],
+    "visited": [
+      {
+        "museumId": 1,
+        "date": "2025-12-12T08:23:31.846Z"
+      },
+      {
+        "museumId": 2,
+        "date": "2025-12-12T08:25:34.125Z"
       }
     ],
     "reviews": []

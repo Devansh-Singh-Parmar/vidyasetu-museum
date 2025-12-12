@@ -20,10 +20,10 @@ A comprehensive web portal to discover museums across India and track your cultu
 - **Points System**: Earn points for various activities (adding to wishlist, visiting museums, writing reviews)
 
 ### 3. Smart Artifact Scanner
-- **AI-Powered Recognition**: Uses TensorFlow.js and MobileNet for image recognition
+- **AI-Powered Recognition**: Uses Google Gemini API for advanced image recognition and analysis
 - **Camera Integration**: Take photos directly or upload images
-- **Instant Information**: Get detailed history cards about identified artifacts
-- **Artifact Database**: Includes information about famous Indian artifacts
+- **Instant Information**: Get detailed history cards with period, significance, materials, and more
+- **Comprehensive Analysis**: Provides rich historical context about artifacts, sculptures, and paintings
 
 ### 4. User Authentication
 - **Sign Up**: Create a new account
@@ -35,7 +35,7 @@ A comprehensive web portal to discover museums across India and track your cultu
 
 - **Frontend**: Next.js 14, React, TypeScript
 - **Styling**: Tailwind CSS
-- **AI/ML**: TensorFlow.js, MobileNet
+- **AI/ML**: Google Gemini API for image recognition and analysis
 - **Authentication**: bcryptjs for password hashing
 - **Data Storage**: JSON file-based storage (can be easily migrated to a database)
 
@@ -53,12 +53,19 @@ A comprehensive web portal to discover museums across India and track your cultu
 npm install
 ```
 
-2. Run the development server:
+2. Set up Gemini API (required for scanner feature):
+   - See [GEMINI_SETUP.md](./GEMINI_SETUP.md) for detailed instructions
+   - Create a `.env.local` file with your Gemini API key:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Building for Production
 
@@ -74,6 +81,7 @@ museum-guide-india/
 ├── app/                    # Next.js app directory
 │   ├── api/               # API routes
 │   │   ├── auth/         # Authentication endpoints
+│   │   ├── scanner/     # Scanner API endpoints (Gemini integration)
 │   │   └── user/         # User data endpoints
 │   ├── dashboard/        # User dashboard
 │   ├── museums/          # Museum directory and profiles
@@ -100,6 +108,9 @@ museum-guide-india/
 - `GET /api/user/reviews?userId={id}` - Get user reviews
 - `POST /api/user/reviews` - Add/update review
 - `GET /api/user/museum-status?userId={id}&museumId={id}` - Get museum status
+
+### Scanner
+- `POST /api/scanner/identify` - Analyze image and identify artifact (requires Gemini API key)
 
 ## Museums Included
 
@@ -131,12 +142,15 @@ The application includes 17 museums across India:
 - Write a review: +25 points
 
 ### Artifact Scanner
-The scanner uses TensorFlow.js with MobileNet model to identify artifacts. It includes a database of famous Indian artifacts like:
-- Dancing Girl of Mohenjo-daro
-- Chola Bronze Nataraja
-- Lion Capital of Ashoka
-- Veiled Rebecca
-- And more...
+The scanner uses Google Gemini API to analyze images and provide detailed information about artifacts, sculptures, and paintings. It can identify:
+- Historical periods and dates
+- Materials and techniques used
+- Cultural and historical significance
+- Artist/creator information (when available)
+- Museum locations (when known)
+- Detailed descriptions and context
+
+The AI-powered scanner works with any artifact image and provides comprehensive historical information instantly.
 
 ## Future Enhancements
 

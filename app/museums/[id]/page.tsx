@@ -29,7 +29,7 @@ interface Museum {
 
 export default function MuseumProfilePage() {
   const params = useParams()
-  const { user } = useAuth()
+  const { user, refreshUser } = useAuth()
   const [museum, setMuseum] = useState<Museum | null>(null)
   const [isInWishlist, setIsInWishlist] = useState(false)
   const [isVisited, setIsVisited] = useState(false)
@@ -77,6 +77,7 @@ export default function MuseumProfilePage() {
       
       if (response.ok) {
         setIsInWishlist(!isInWishlist)
+        await refreshUser()
       }
     } catch (error) {
       console.error('Error updating wishlist:', error)
@@ -102,6 +103,7 @@ export default function MuseumProfilePage() {
       
       if (response.ok) {
         setIsVisited(true)
+        await refreshUser()
       }
     } catch (error) {
       console.error('Error marking as visited:', error)
@@ -122,23 +124,31 @@ export default function MuseumProfilePage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <Link href="/museums" className="text-primary-600 hover:underline mb-4 inline-block font-medium">
-        ← Back to Museums
+        ← Back to list
       </Link>
 
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="relative h-96 w-full">
-          <Image
-            src={museum.image}
-            alt={museum.name}
-            fill
-            className="object-cover"
-          />
-        </div>
+        {(() => {
+          const imageUrl = museum.image || `https://source.unsplash.com/featured/?${encodeURIComponent(museum.name)}`
+          return (
+            <div className="relative h-96 w-full">
+              <Image
+                src={imageUrl}
+                alt={museum.name}
+                fill
+                className="object-cover"
+              />
+            </div>
+          )
+        })()}
         
         <div className="p-8">
           <div className="flex justify-between items-start mb-6">
-            <div>
-              <h1 className="text-4xl font-bold mb-2 text-gray-900">{museum.name}</h1>
+            <div className="space-y-1">
+              <p className="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary-50 text-primary-700">
+                Museum profile
+              </p>
+              <h1 className="text-3xl font-bold text-gray-900">{museum.name}</h1>
               <p className="text-gray-700 text-lg">
                 📍 {museum.location}, {museum.state}
               </p>
@@ -158,7 +168,7 @@ export default function MuseumProfilePage() {
                 {!isVisited && (
                   <button
                     onClick={markAsVisited}
-                    className="bg-green-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-600"
+                  className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700"
                   >
                     ✓ Mark Visited
                   </button>
@@ -167,43 +177,49 @@ export default function MuseumProfilePage() {
             )}
           </div>
 
-          <p className="text-gray-700 mb-6 text-lg">{museum.description}</p>
+          <p className="text-gray-700 mb-6 text-base leading-relaxed">{museum.description}</p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-blue-50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">🕐 Opening Hours</h3>
+              <h3 className="font-semibold text-lg mb-2">🕐 Hours</h3>
               <p className="text-gray-700">{museum.openingHours}</p>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2">💰 Ticket Price</h3>
+              <h3 className="font-semibold text-lg mb-2">💰 Tickets</h3>
               <p className="text-gray-700">{museum.ticketPrice}</p>
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold mb-6">Top 5 Exhibits</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+            <h2 className="text-2xl font-bold">Top 5 highlights</h2>
+            <p className="text-sm text-gray-600">Start with these five must-see pieces.</p>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {museum.topExhibits.map((exhibit, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg overflow-hidden border border-gray-200">
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={exhibit.image}
-                    alt={exhibit.name}
-                    fill
-                    className="object-cover"
-                  />
+            {museum.topExhibits.map((exhibit, index) => {
+              const exhibitImage = exhibit.image || `https://source.unsplash.com/featured/?${encodeURIComponent(exhibit.name)}`
+              return (
+                <div key={index} className="bg-gray-50 rounded-lg overflow-hidden border border-gray-200 hover:shadow-md transition-shadow">
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={exhibitImage}
+                      alt={exhibit.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-lg mb-2 text-gray-900">{exhibit.name}</h3>
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>Period:</strong> {exhibit.period}
+                    </p>
+                    <p className="text-gray-800 text-sm mb-2">{exhibit.description}</p>
+                    <p className="text-xs text-gray-700 italic">
+                      <strong>Significance:</strong> {exhibit.significance}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-lg mb-2 text-gray-900">{exhibit.name}</h3>
-                  <p className="text-sm text-gray-700 mb-2">
-                    <strong>Period:</strong> {exhibit.period}
-                  </p>
-                  <p className="text-gray-800 text-sm mb-2">{exhibit.description}</p>
-                  <p className="text-xs text-gray-700 italic">
-                    <strong>Significance:</strong> {exhibit.significance}
-                  </p>
-                </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ interface AuthContextType {
   login: (email: string, password: string) => Promise<boolean>
   signup: (name: string, email: string, password: string) => Promise<boolean>
   logout: () => void
+  refreshUser: () => Promise<void>
   loading: boolean
 }
 
@@ -79,8 +80,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem('user')
   }
 
+  const refreshUser = async () => {
+    try {
+      if (!user?.id) return
+      const res = await fetch(`/api/user/profile?userId=${user.id}`)
+      if (res.ok) {
+        const freshUser = await res.json()
+        setUser(freshUser)
+        localStorage.setItem('user', JSON.stringify(freshUser))
+      }
+    } catch (err) {
+      console.error('Refresh user error:', err)
+    }
+  }
+
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout, loading }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, refreshUser, loading }}>
       {children}
     </AuthContext.Provider>
   )
